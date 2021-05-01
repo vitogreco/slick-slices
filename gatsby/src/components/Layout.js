@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import 'normalize.css';
-import Drift from 'react-driftjs';
 import Nav from './Nav';
 import Footer from './Footer';
 import GlobalStyles from '../styles/GlobalStyles';
@@ -40,11 +39,6 @@ export default function Layout({ children }) {
           <Nav />
           {children}
           <Footer />
-          <Drift
-            appId="xxxxx"
-            userId="1234"
-            attributes={{ email: 'user@example.com', company: 'Acme Inc' }}
-          />
         </ContentStyles>
       </SiteBorderStyles>
     </>
